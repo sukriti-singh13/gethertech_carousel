@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const Carousel = ({ CarouselItem, currentIndex }) => {
+  const CurrentImageRef = useRef();
+
+  useEffect(() => {
+    CurrentImageRef.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  }, [currentIndex]);
+
   return (
-    <div className="carousel_img">
-      <img src={CarouselItem[currentIndex].Image} />
+    <div className="carousal-images-wrapper">
+      {CarouselItem.map((image, index) => (
+        <img
+          ref={index === currentIndex ? CurrentImageRef : null}
+          src={image.Image}
+        />
+      ))}
     </div>
   );
 };
