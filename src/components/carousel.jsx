@@ -1,6 +1,6 @@
 import React from "react";
 
-const carousel = ({ CarouselItem, currentIndex }) => {
+const Carousel = ({ CarouselItem, currentIndex }) => {
   return (
     <div className="carousel_img">
       <img src={CarouselItem[currentIndex].Image} />
@@ -8,4 +8,4 @@ const carousel = ({ CarouselItem, currentIndex }) => {
   );
 };
 
-export default carousel;
+export default Carousel;
