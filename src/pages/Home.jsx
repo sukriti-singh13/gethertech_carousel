@@ -5,8 +5,6 @@ import Tech3 from "../assets/tech3.avif";
 import Tech4 from "../assets/tech4.avif";
 import Tech5 from "../assets/tech5.avif";
 import Tech6 from "../assets/tech6.avif";
-import Tech7 from "../assets/tech7.avif";
-import Tech8 from "../assets/tech8.avif";
 import Back from "../assets/prev.svg";
 import Next from "../assets/next.svg";
 import Carousel from "../components/carousel";
