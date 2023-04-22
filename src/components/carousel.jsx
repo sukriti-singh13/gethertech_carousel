@@ -13,6 +13,7 @@ const Carousel = ({ CarouselItem, currentIndex }) => {
     <div className="carousal-images-wrapper">
       {CarouselItem.map((image, index) => (
         <img
+          key={index}
           ref={index === currentIndex ? CurrentImageRef : null}
           src={image.Image}
         />

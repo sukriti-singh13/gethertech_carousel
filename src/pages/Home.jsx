@@ -18,7 +18,6 @@ export const Home = () => {
     { Image: Tech4 },
     { Image: Tech5 },
     { Image: Tech1 },
-
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -40,11 +39,10 @@ export const Home = () => {
     timerRef.current = setTimeout(() => {
       goNext();
     }, 4000);
-    console.log("running");
+
     return () => clearTimeout(timerRef.current);
   }, [goNext]);
   const onDotClick = (clickedDot) => {
-    console.log(clickedDot);
     setCurrentIndex(clickedDot);
   };
   return (
